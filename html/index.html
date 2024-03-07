@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitam Events Platform</title>
+    <link rel="stylesheet" href="/css/homepage4.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo-container">
+            <img src="/pictures/gitam logo.jpeg" alt="Logo" class="logo">
+            
+        </div>
+        <span class="site-title">Gitam Events Platform</span>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#upcoming-events">Upcoming Events</a>
+            <a href="#recruitments">Recruitments</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#clubs">Our Clubs</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Welcome to the Gitam Event Zone</h1>
+        <p>Discover the latest events and activities happening at Gitam University.</p>
+        <hr>
+        <div class="slider">
+            <div class="slides">
+                <!-- Include your images here -->
+                <div class="slide"><img src="/pictures/GIMSAR original.webp" alt="Slide 1"></div>
+                <div class="slide"><img src="/pictures/kalakrithi logo.webp" alt="Slide 2"></div>
+                <div class="slide"><img src="/pictures/gusac original.webp" alt="Slide 3"></div>
+                <div class="slide"><img src="/pictures/shore_24_clogo.png" alt="Slide 3"></div>
+                <!-- ... additional slides as needed -->
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+        <hr>
+        
+        <div class="events-section">
+            <div id="upcomingEventsContainer" class="events-container">
+                <!-- Dynamic event content will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="events-row">
+            <!-- Event container 1 -->
+            <div class="event-container">
+                <img src="/pictures/kalakrithi ori.webp" alt="Event Image" class="event-image">
+                <div class="event-info">
+                    <h2>Kalakrithi Fest 2024</h2>
+                    <p class="event-info"><strong>Conducted by:</strong> Gitam Kalakrithi</p>
+                    <p class="event-info"><strong>Description:</strong> Kalakrithi is conductiong one of the biggest fest of 2024 GITAM visakhapatnam campus, for more information register below.</p>
+                    <a href="registration-link" class="register-button">know more</a>
+                </div>
+            </div>
+            <!-- Event container 2 -->
+            <div class="event-container">
+                <img src="/pictures/shore_24_clogo.png" alt="Event Image" class="event-image">
+                <div class="event-info">
+                    <h2>Shore Fest 2024</h2>
+                    <p class="event-info"><strong>Conducted by:</strong> GITAM Shore</p>
+                    <p class="event-info"><strong>Description:</strong> GITAM is conductiong one of the biggest fest of 2024 across all the GITAM campus, for more information register below.</p>
+                    <a href="registration-link" class="register-button">know more</a>
+                </div>
+            </div>
+            <!-- Add more event containers as needed -->
+            <div class="event-container">
+                <img src="/pictures/gusac original.webp" alt="Event 2" class="event-image">
+                <div class="event-info">
+                    
+                    <h2>GUSAC Fest 2024</h2>
+                    <p class="event-info"><strong>Conducted by:</strong> GITAM GUSAC</p>
+                    <p class="event-info"><strong>Description:</strong> GUSAC is conductiong one of the biggest fest of 2024 across all the branches in GITAM visakhapatnam, for more information register below.</p>
+                    <a href="registration-link" class="register-button">know more</a>
+                </div>
+            </div>
+
+            <div class="event-container">
+                <img src="/pictures/GIMSAR original.webp" alt="Event 2" class="event-image">
+                <div class="event-info">
+                    <h2>GIMSR Fest 2024</h2>
+                    <p class="event-info"><strong>Conducted by:</strong> GIMSR</p>
+                    <p class="event-info"><strong>Description:</strong> GIMSR is conductiong one of the biggest fest of 2024 by GIMSR visakhapatnam, for more information register below.</p>
+                    <a href="registration-link" class="register-button">know more</a>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="/javascript/homepage.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyByxB8oSsqYHzKy_i5NN56zTXj8Dwc1onc",
+          authDomain: "gitamevent.firebaseapp.com",
+          projectId: "gitamevent",
+          storageBucket: "gitamevent.appspot.com",
+          messagingSenderId: "241569526422",
+          appId: "1:241569526422:web:608b51ee2f40f1d7c548b7",
+          measurementId: "G-K76KWNTJY9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
